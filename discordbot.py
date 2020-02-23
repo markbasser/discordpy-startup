@@ -37,6 +37,10 @@ async def on_message(message):
     if message.content == "おはよう":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん ☆おはようございます☆")  # f文字列（フォーマット済み文字列リテラル）
+        
+    if message.content == "あげる":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"{message.author.mention}さんから臭い雨が降る /rain dappuncoin 931 あげる～☆")  # f文字列（フォーマット済み文字列リテラル）
 
     if message.content == "BENKEIS":
         # チャンネルへメッセージを送信
