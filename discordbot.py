@@ -85,10 +85,15 @@ async def on_message(message):
                                              , '凶【▲残念！好機はないね。負けも勝ちの内かと思え！】', '大凶【▲▲吐き気するわ！駄目だこりゃ】')), inline=False)
         await message.channel.send(embed=embed)
 
-    elif message.content == "!ダイレクトメッセージ":
+    elif message.content == "!DM":
         # ダイレクトメッセージ送信
         dm = await message.author.create_dm()
         await dm.send(f"{message.author.mention}さん Benkeis TwitchTV🎮 Followお願いね！ https://www.twitch.tv/benkeis ")
+        
+     elif message.content == "!DM":
+        # ダイレクトメッセージ送信
+        dm = await message.author.create_dm()
+        await dm.send(f"{message.author.mention}さん BEN COIN🎁10000BEN　🎉/申請後1日位後にウズラウォレットで残高確認【/info BEN】して下さい。ウズラウォレット開設は【/info /help】です。　")
 
 
 client.run(token)
