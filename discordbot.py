@@ -45,7 +45,21 @@ async def on_message(message):
     if message.content == "BENKEIS":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さんと一緒に ☆༺.Benkeis now!.༻ ༒ⷬⷬeSports༒ⷬⷬ GameON!☆")  # f文字列（フォーマット済み文字列リテラル）
-        
+ 
+    if message.content == "こんにちは":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"{message.author.mention}さん こんにちは☺️楽しんで！")  # f文字列（フォーマット済み文字列リテラル）
+
+
+    if message.content == "こんばんは":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"{message.author.mention}さん こんばんは😃🌃早く休みましょう🎵")  # f文字列（フォーマット済み文字列リテラル）
+
+    if message.content == "おはよー":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"{message.author.mention}さん GoodMorning♡")  # f文字列（フォーマット済み文字列リテラル）
+
+       
     elif message.content == "投票":
         # リアクションアイコンを付けたい
         q = await message.channel.send("あなたはゲーマーですか？")
@@ -74,7 +88,7 @@ async def on_message(message):
     elif message.content == "!ダイレクトメッセージ":
         # ダイレクトメッセージ送信
         dm = await message.author.create_dm()
-        await dm.send(f"{message.author.mention}さんにダイレクトメッセージ")
+        await dm.send(f"{message.author.mention}さん Benkeis TwitchTV🎮 Followお願いね！ https://www.twitch.tv/benkeis ")
 
 
 client.run(token)
