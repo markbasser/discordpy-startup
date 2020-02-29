@@ -90,7 +90,7 @@ async def on_message(message):
         dm = await message.author.create_dm()
         await dm.send(f"{message.author.mention}さん Benkeis TwitchTV🎮 Followお願いね！ https://www.twitch.tv/benkeis ")
         
-     elif message.content == "!DM":
+     elif message.content == "!BEN":
         # ダイレクトメッセージ送信
         dm = await message.author.create_dm()
         await dm.send(f"{message.author.mention}さん BEN COIN🎁10000BEN　🎉/申請後1日位後にウズラウォレットで残高確認【/info BEN】して下さい。ウズラウォレット開設は【/info /help】です。　")
