@@ -71,6 +71,42 @@ async def on_message(message):
         q = await message.channel.send("あなたはeSpotsTeam所属していますか？")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
         
+     elif message.content == "assept":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /assept")
+        [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
+
+                
+    elif message.content == "link":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /link ウズラリンク")
+        [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
+
+        
+    elif message.content == "info":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /info ben ウズラ残高")
+        [await q.add_reaction(i) for i in ('↺', '↷')]  # for文の内包表記
+
+        
+    elif message.content == "rain":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /rain ben 10 all ☔を降らします")
+        [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
+
+        
+    elif message.content == "tip":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /tip ben 10 "f"{message.author.mention}さん にチップ＄を送りました")
+        [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
+  
+
+    elif message.content == "throw":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw ben 10 2 EquallyDistributed ☞/catchで受け取ってください⚾")
+        [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
+        
+        
 
     elif message.content == "おみくじ":
         # Embedを使ったメッセージ送信 と ランダムで要素を選択
