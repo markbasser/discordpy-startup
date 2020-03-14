@@ -71,16 +71,16 @@ async def on_message(message):
         q = await message.channel.send("あなたはeSpotsTeam所属していますか？")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
         
-    elif message.content == "assept":
+    elif message.content == "accept":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /assept")
+        q = await message.channel.send(" /accept 🔑")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
                 
     elif message.content == "link":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /link ウズラリンク")
-        [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
+        [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
 
         
     elif message.content == "info":
