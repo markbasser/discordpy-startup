@@ -77,33 +77,33 @@ async def on_message(message):
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
                 
-    elif message.content == "link":
+    elif message.content == "help":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /link ウズラリンク")
+        q = await message.channel.send(" /help Uzuraforヘルプ")
         [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
 
         
     elif message.content == "info":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /info ben ウズラ残高")
+        q = await message.channel.send(" /info ben 残高")
         [await q.add_reaction(i) for i in ('↺', '↷')]  # for文の内包表記
 
         
     elif message.content == "rain":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain ben 10 all ☔を降らします")
+        q = await message.channel.send(" /rain ben 5 all ☔を降らします")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
 
         
     elif message.content == "tip":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip ben 10 "f"{message.author.mention}さん にチップ＄を送りました")
+        q = await message.channel.send(" /tip ben 1 "f"{message.author.mention}さん にチップ＄を送りました")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
   
 
     elif message.content == "throw":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /throw ben 10 2 EquallyDistributed ☞/catchで受け取ってください⚾")
+        q = await message.channel.send(" /throw ben 2 2 EquallyDistributed ☞/catchで受け取ってください⚾")
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
         
         
