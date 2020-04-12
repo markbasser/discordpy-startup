@@ -79,7 +79,7 @@ async def on_message(message):
                 
     elif message.content == "help":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /help Uzuraforヘルプ")
+        q = await message.channel.send(" /help UzurasWalletヘルプ")
         [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
 
         
