@@ -60,9 +60,9 @@ async def on_message(message):
         await message.channel.send(f"{message.author.mention}さん GoodMorning♡")  # f文字列（フォーマット済み文字列リテラル）
 
        
-    elif message.content == "投票":
+    elif message.content == "hi":
         # リアクションアイコンを付けたい
-        q = await message.channel.send("あなたはゲーマーですか？")
+        q = await message.channel.send("Are you a cryptocurrency fan?")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
                 
@@ -79,7 +79,7 @@ async def on_message(message):
                 
     elif message.content == "help":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /help UzurasWalletヘルプ")
+        q = await message.channel.send(" /help ←Uzuras Wallet Help")
         [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
 
         
@@ -91,13 +91,13 @@ async def on_message(message):
         
     elif message.content == "rain":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain ben 5 ActiveUserOnly ☔を降らします")
+        q = await message.channel.send(" /rain ben 5 ActiveUserOnly ☔Rainを降らします")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
 
         
     elif message.content == "tip":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip ben 1 "f"{message.author.mention}さん にチップ＄を送りました")
+        q = await message.channel.send(" /tip ben 1 "f"{message.author.mention}さん にTip＄を送りました")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
   
 
@@ -109,19 +109,19 @@ async def on_message(message):
 
     elif message.content == "/tip":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip JPYN 1 "f"{message.author.mention}さん にチップ＄を送りました")
+        q = await message.channel.send(" /tip JPYN 1 "f"{message.author.mention}さん にTip＄を送りました")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
 
 
     elif message.content == "/info":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip bgpt 5 "f"{message.author.mention}さん にチップ＄を送りました")
+        q = await message.channel.send(" /tip bgpt 5 "f"{message.author.mention}さん にTip＄を送りました")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
 
 
     elif message.content == "/rain":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain jpyn 5 ActiveUserOnly ☔を降らします")
+        q = await message.channel.send(" /rain jpyn 5 ActiveUserOnly ☔Rainを降らします")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
 
 
@@ -144,6 +144,22 @@ async def on_message(message):
                                              , 'ごく普通やね【何それ！？と思うだろうがごく普通だ！棚から牡丹餅はない】', '大凶【▲▲吐き気するわ！駄目だこりゃ】'
                                              , '凶【▲残念！好機はないね。負けも勝ちの内かと思え！】', '大凶【▲▲吐き気するわ！駄目だこりゃ】')), inline=False)
         await message.channel.send(embed=embed)
+
+
+    elif message.content == "omikuji":
+        # Embedを使ったメッセージ送信 と ランダムで要素を選択
+        embed = discord.Embed(title="☆OMIKUJI☆", description=f"{message.author.mention}Today!YourFortune!☆",
+                              color=0x2ECC69)
+        embed.set_thumbnail(url=message.author.avatar_url)
+        embed.add_field(name="[Today!YourFortune!] ",
+                        value=random.choice(('☆☆彡VeryVeryGood☆彡☆【Very Good! It ’s a very competitive day.】','☆VeryGoood!☆【It is a good day for the team. 】','Good☆彡！【It will be a convincing day. I can not expect much money.】'
+                                             ,'VeryGood【☆☆☆If you work with confidence, you will always get good results. ♡♡♡ Love luck is super berig】', 'GoodDay【☆☆Good chance! There is a result of attacking. ♡♡ For the time being, there is no problem! ?】', 'Good!【☆☆ If you change the usual theory, you will get good results. ♡♡ No change from the current situation】'
+                                             ,  'usuallyGood【☆☆参加型オンラインゲーGood results with participatory online games ♡ Not only games. Good luck if you go outside to meet】', 'good!【☆The current situation is unchanged ♡ No particular change Let it go！】',  'Good!【☆I do not need any advice】'
+                                             , 'ごく普通やね【何それ！？と思うだろうがごく普通だ！棚から牡丹餅はない】', '大凶【▲▲吐き気するわ！駄目だこりゃ】'
+                                             , 'Worst【▲Sorry! There is no opportunity. I think the loss is a win！】', 'Very worst!BAD【▲▲I m nauseous! Useless】')), inline=False)
+        await message.channel.send(embed=embed)
+
+
 
     elif message.content == "!ダイレクトメッセージ":
         # ダイレクトメッセージ送信
