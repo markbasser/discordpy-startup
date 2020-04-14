@@ -73,7 +73,7 @@ async def on_message(message):
                 
     elif message.content == "RAIN":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain JPYN 5 ActiveUserOnly ☔It Rains")
+        q = await message.channel.send(" /rain JPYN 5.5 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☂', '⛈')]  # for文の内包表記
         
     elif message.content == "language":
@@ -96,7 +96,7 @@ async def on_message(message):
         
     elif message.content == "rain":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BEN 7 ActiveUserOnly ☔It Rains")
+        q = await message.channel.send(" /rain BEN 7.77 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
         
         
@@ -124,7 +124,7 @@ async def on_message(message):
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
 
         
-    elif message.content == "#throw":
+    elif message.content == "$throw":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /throw BGPT 30 3 EquallyDistributed ☞/catchで受け取ってください⚾")
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
@@ -144,11 +144,11 @@ async def on_message(message):
 
     elif message.content == "/rain":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain JPYN 5 ActiveUserOnly ☔It Rains")
+        q = await message.channel.send(" /rain JPYN 6 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
 
         
-    elif message.content == "#rain":
+    elif message.content == "$rain":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /rain BGPT 10 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
