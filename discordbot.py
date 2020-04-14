@@ -108,7 +108,13 @@ async def on_message(message):
         
     elif message.content == "tip":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip ben 1 "f"{message.author.mention}さん gave you a Tip＄")
+        q = await message.channel.send(" /tip ben 2 "f"{message.author.mention}さん gave you a Tip＄")
+        [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
+        
+           
+    elif message.content == "$tip":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /tip JPYN 1.1 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
   
 
