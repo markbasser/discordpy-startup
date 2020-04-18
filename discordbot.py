@@ -63,125 +63,202 @@ async def on_message(message):
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん Good Night! Have a good dream♡")  # f文字列（フォーマット済み文字列リテラル）
 
-
+    if message.content == "jp/jpyn":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip JPYN 10 "f"{message.author.mention}　 🔑<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）
        
-    elif message.content == "Rain":
+    if message.content == "jp/ben":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip BEN 100 "f"{message.author.mention}　　🔑<:BENKEICOIN04:698471407650209832><:benkeicoinsl:698471387064696833>  Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "jp/bgpt":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip BGPT 100 "f"{message.author.mention}　 🔑<:BGPT02:698471366004965406> Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "jp/kenj":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip KENJ 100 "f"{message.author.mention}　 🔑<:BGPT02:698471366004965406> Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "jp/sprts":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip SPRTS 100 "f"{message.author.mention}　 🔑<:BGPT02:698471366004965406> Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "sb/jpyn":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip JPYN 10 "f"{message.author.mention}　 🔑<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）
+       
+    if message.content == "sb/ben":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip BEN 100 "f"{message.author.mention}　　🔑<:BENKEICOIN04:698471407650209832><:benkeicoinsl:698471387064696833>  Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "sb/bgpt":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip BGPT 100 "f"{message.author.mention}　 🔑<:BGPT02:698471366004965406> Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "sb/kenj":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip KENJ 100 "f"{message.author.mention}　 🔑<:BGPT02:698471366004965406> Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "sb/sprts":
+        # チャンネルへメッセージを送信
+        await message.channel.send("/tip SPRTS 100 "f"{message.author.mention}　 🔑<:BGPT02:698471366004965406> Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
+    
+   
+    elif message.content == "b/link":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BEN 7.77 ActiveUserOnly  ☔It Rains")
-        [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '<:benkeicoinsl:698471387064696833>')]  # for文の内包表記
-
-                
-    elif message.content == "RAIN":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BGPT 77.77 ActiveUserOnly  ☔It Rains")
-        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '🌈')]  # for文の内包表記
-        
-    elif message.content == "language":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /language EN 🔑")
+        q = await message.channel.send("/link ")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
-                
-    elif message.content == "help":
+    elif message.content == "b/language":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /help ←Uzuras Wallet Help")
+        q = await message.channel.send(" /language EN ")
+        [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
+              
+    elif message.content == "b/accept":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /accept ")
         [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
 
+    elif message.content == "b/benzan":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /info ben ")
+        [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
         
-    elif message.content == "info":
+    elif message.content == "b/jpynzan":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /info ben  残高")
-        [await q.add_reaction(i) for i in ('↺', '↷')]  # for文の内包表記
-
+        q = await message.channel.send(" /info jpyn ")
+        [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記      
         
-    elif message.content == "rain":
+    elif message.content == "b/bgptzan":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BEN 7.77 ActiveUserOnly  ☔It Rains")
-        [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '<:benkeicoinsl:698471387064696833>')]  # for文の内包表記
-        
-        
-    elif message.content == "TIP":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip JPYN 1.14 "f"{message.author.mention}さん gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '<:hello:699779689127870514>')]  # for文の内包表記
-  
-        
-    elif message.content == "tip":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip ben 5 "f"{message.author.mention}さん gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '<:ok1:700492571788443651>')]  # for文の内包表記
-        
-           
-    elif message.content == "$tip":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip BGPT 10 "f"{message.author.mention}さん gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:ok1:700492571788443651>')]  # for文の内包表記
-  
-
-    elif message.content == "throw":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /throw JPYN 5 3 EquallyDistributed  ☞/catchで受け取ってください⚾")
-        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '✋')]  # for文の内包表記
-
-        
-    elif message.content == ".throw":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /throw BEN 10 4 EquallyDistributed  ☞/catchで受け取ってください⚾")
-        [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '✋')]  # for文の内包表記
-
-        
-    elif message.content == "$throw":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /throw BGPT 30 3 EquallyDistributed  ☞/catchで受け取ってください⚾")
-        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '✋')]  # for文の内包表記
-
-        
-    elif message.content == "/tip":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip JPYN 1 "f"{message.author.mention}さん  gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '☺')]  # for文の内包表記
-
-
-    elif message.content == "/info":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip BGPT 10 "f"{message.author.mention}さん  gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '☺')]  # for文の内包表記
-
-
-    elif message.content == "/rain":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain JPYN 6 ActiveUserOnly  ☔It Rains")
-        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '🌈')]  # for文の内包表記
-
-        
-    elif message.content == "$rain":
-        # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BGPT 10 ActiveUserOnly  ☔It Rains")
-        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:aloha:699581550777597992>')]  # for文の内包表記
+        q = await message.channel.send(" /info bgpt ")
+        [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
     
+    elif message.content == "b/kenjzan":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /info kenj ")
+        [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
+             
+    elif message.content == "b/sprtszan":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /info sprts ")
+        [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記   
+     
+    
+    elif message.content == "./rain":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /rain BGPT 60 ActiveUserOnly  <:BGPT02:698471366004965406><:good01:699581068285706301>🌈☔It Rains")
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '🌈')]  # for文の内包表記
+         
+            
+    elif message.content == "./Rain":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send("  /rain BEN 30 ActiveUserOnly  <:benkeicoinsl:698471387064696833>🌈☔It Rains<:jhlo:700932650944299098>")
+        [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '<:benkeicoinsl:698471387064696833>')]  # for文の内包表記
+
         
-    elif message.content == "/RAIN":
+    elif message.content == "./RAIN":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BGPT 50 ActiveUserOnly  ☔It Rains")
-        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:ok1:700492571788443651>')]  # for文の内包表記
-
-
-    elif message.content == "balance":
+        q = await message.channel.send(" /rain JPNY 50 ActiveUserOnly  <:JPYNdisco:698471276498649168>🌈☔It Rains<:jhlo:700932650944299098>")
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '🌈')]  # for文の内包表記
+        
+   
+    elif message.content == "./RAin":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /info jpyn ←Fill in this balance")
-        [await q.add_reaction(i) for i in ('↺', '↷')]  # for文の内包表記
-
-
-    elif message.content == "bad":
+        q = await message.channel.send(" /rain KENJ 100 ActiveUserOnly  <:kenj:700136543003607101> 🌈☔It Rains<:jhlo:700932650944299098>")
+        [await q.add_reaction(i) for i in ('<:kenj:700136543003607101>', '<:sangras01:699579409220370514>')]  # for文の内包表記
+      
+    
+    elif message.content == "./RAIn":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip dappuncoin 931 "f"{message.author.mention}さん  unkoTip＄を送りました")
-        [await q.add_reaction(i) for i in ('💩', '💩')]  # for文の内包表記
-
-
-    elif message.content == "unko":
+        q = await message.channel.send(" /rain SPRTS 1000 ActiveUserOnly  <:sprts:699076413931782146> 🌈☔It Rains🌱")
+        [await q.add_reaction(i) for i in ('<:sprts:699076413931782146>', '🌱')]  # for文の内包表記
+        
+        
+   
+    elif message.content == "./throw":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip dappuncoin 931 "f"{message.author.mention}さん  unkoTip＄を送りました")
-        [await q.add_reaction(i) for i in ('💩', '💩')]  # for文の内包表記
+        q = await message.channel.send(" /throw BGPT 200 4 EquallyDistributed  <:good01:699581068285706301><:BGPT02:698471366004965406>Pls receive→/catch✋")
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:good:699580636448423936>')]  # for文の内包表記
+
+        
+    elif message.content == "./THROW":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw BEN 80 4 EquallyDistributed  <:benkeicoinsl:698471387064696833>Pls receive→/catch✋")
+        [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '<:good:699580636448423936>')]  # for文の内包表記
+
+        
+    elif message.content == "./THrow":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw JPYN 100 4 EquallyDistributed  <:good01:699581068285706301><:JPYNdisco:698471276498649168>Pls receive→/catch✋")
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '<:good01:699581068285706301>')]  # for文の内包表記
+
+        
+    elif message.content == "./THRow":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw KENJ 400 4 EquallyDistributed  <:kenj:700136543003607101>Pls receive→/catch✋")
+        [await q.add_reaction(i) for i in ('<:kenj:700136543003607101>', '<:good01:699581068285706301>')]  # for文の内包表記
+
+
+    elif message.content == "./THROw":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw BGPT 300 5 EquallyDistributed  <:good01:699581068285706301><:BGPT02:698471366004965406><:BGPT02:698471366004965406>Pls receive→/catch✋")
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:good:699580636448423936>')]  # for文の内包表記
+
+
+    elif message.content == "./thunder":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /thunder BGPT 300 ActiveUserOnly  <:good:699580636448423936><:BGPT02:698471366004965406>thunder")
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:BGPT02:698471366004965406>')]  # for文の内包表記
+
+        
+    elif message.content == "./tHROW":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw BGPT 500 4 AttenuationDistributed  <:BGPT02:698471366004965406><:good:699580636448423936>")
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:jhlo:700932650944299098>')]  # for文の内包表記
+    
+    
+    elif message.content == "./thROW":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw BEN 100 4 AttenuationDistributed  <:benkeicoinsl:698471387064696833>Pls receive→/catch✋")
+        [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '<:good:699580636448423936>')]  # for文の内包表記
+ 
+    
+    elif message.content == "./thrOW":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw JPYN 100 4 AttenuationDistributed  <:JPYNdisco:698471276498649168>Pls receive→/catch✋")
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '<:good01:699581068285706301>')]  # for文の内包表記
+
+        
+    elif message.content == "./THRow":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /throw KENJ 1000 4 AttenuationDistributed  <:kenj:700136543003607101>Pls receive→/catch✋")
+        [await q.add_reaction(i) for i in ('<:kenj:700136543003607101>', '<:good01:699581068285706301>')]  # for文の内包表記
+
+        
+    elif message.content == "バカ":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /tip dappuncoin 9314 "f"{message.author.mention}　💀🚫Prohibited terms💩💩")
+        [await q.add_reaction(i) for i in ('💩', '🚫')]  # for文の内包表記
+
+
+    elif message.content == "FuckU":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /tip dappuncoin 9314 "f"{message.author.mention}　💩🚫Prohibited terms💩💩")
+        [await q.add_reaction(i) for i in ('💩', '🚫')]  # for文の内包表記
+
+
+    elif message.content == "SHIT":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /tip dappuncoin 9314 "f"{message.author.mention}💩🚫Prohibited terms💩💩")
+        [await q.add_reaction(i) for i in ('💩', '🚫')]  # for文の内包表記
+      
+    
+    elif message.content == "CUNT":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /tip dappuncoin 9314 "f"{message.author.mention}💩🚫Prohibited terms💩💩")
+        [await q.add_reaction(i) for i in ('💩', '🚫')]  # for文の内包表記
+
         
         
 
@@ -190,12 +267,12 @@ async def on_message(message):
         embed = discord.Embed(title="おみくじ", description=f"{message.author.mention}さんの今日の運勢は！",
                               color=0x2ECC69)
         embed.set_thumbnail(url=message.author.avatar_url)
-        embed.add_field(name="[GAME運勢YourFortune] ",
-                        value=random.choice(('☆☆彡超最高☆彡☆【何してもVeryGood!勝負に強い日です】','☆最高☆【チームに恵まれた日です。チャレンジしたら幸運を招きます☆彡】','やったね☆彡！【納得出来る日でしょう。金運は余り期待出来ないです。】'
+        embed.add_field(name="[今日の運勢YourFortune] ",
+                        value=random.choice(('☆☆彡超最高☆彡☆【何してもVeryGood!☆勝負に強い日です】','☆最高☆【チームに恵まれた日です。チャレンジしたら幸運を招きます☆彡】','やったね☆彡！【納得出来る日でしょう。金運は余り期待出来ないです。】'
                                              ,'大吉【☆☆☆自信もって取り組めば必ず好成果となって返ってきます。♡♡♡恋愛運は超ベリグっ】', '中吉【☆☆好チャンス！攻めて成果あり。♡♡とりあえず問題なしかな！？】', '小吉【☆☆通常のセオリーを変化させたら好成果となる。♡♡現状から変化ない】'
                                              ,  '末吉【☆☆参加型オンラインゲームで好成果あり♡ゲームばかりじゃダメ。出会いを求めて外にでたら吉あり】', '吉【☆現状変化なし♡特に変化なし。そのままやっとけ！】',  '吉【☆まぁ！こんなもんよ】'
                                              , 'ごく普通やね【何それ！？と思うだろうがごく普通だ！棚から牡丹餅はない】', '大凶【▲▲吐き気するわ！駄目だこりゃ】'
-                                             , '凶【▲残念！好機はないね。負けも勝ちの内かと思え！】', '大凶【▲▲吐き気するわ！駄目だこりゃ】')), inline=False)
+                                             , '凶【▲残念！好機はないね。負けも勝ちの内かと思え！ファイト】', '大凶【▲▲吐き気するわ！駄目だこりゃ】')), inline=False)
         await message.channel.send(embed=embed)
 
 
