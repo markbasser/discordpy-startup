@@ -227,7 +227,7 @@ async def on_message(message):
     elif message.content == "./tHROW":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /throw BGPT 500 4 AttenuationDistributed  <:BGPT02:698471366004965406><:good:699580636448423936>")
-        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:jhlo:700932650944299098>')]  # for文の内包表記
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:hello1:713004241131667528>')]  # for文の内包表記
     
     
     elif message.content == "./thROW":
