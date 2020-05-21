@@ -165,19 +165,19 @@ async def on_message(message):
             
     elif message.content == "./Rain":
         # リアクションアイコンを付けたい
-        q = await message.channel.send("  /rain BEN 30 ActiveUserOnly  <:benkeicoinsl:698471387064696833>🌈☔It Rains<:jhlo:700932650944299098>")
+        q = await message.channel.send("  /rain BEN 30 ActiveUserOnly  <:benkeicoinsl:698471387064696833>🌈☔It Rains")
         [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '<:benkeicoinsl:698471387064696833>')]  # for文の内包表記
 
         
     elif message.content == "./RAIN":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain JPNY 50 ActiveUserOnly  <:JPYNdisco:698471276498649168>🌈☔It Rains<:jhlo:700932650944299098>")
+        q = await message.channel.send(" /rain JPNY 50 ActiveUserOnly  <:JPYNdisco:698471276498649168>🌈☔It Rains")
         [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '🌈')]  # for文の内包表記
         
    
     elif message.content == "./RAin":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain KENJ 100 ActiveUserOnly  <:kenj:700136543003607101> 🌈☔It Rains<:jhlo:700932650944299098>")
+        q = await message.channel.send(" /rain KENJ 100 ActiveUserOnly  <:kenj:700136543003607101> 🌈☔It Rains")
         [await q.add_reaction(i) for i in ('<:kenj:700136543003607101>', '<:sangras01:699579409220370514>')]  # for文の内包表記
       
     
