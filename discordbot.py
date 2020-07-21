@@ -32,11 +32,11 @@ async def on_message(message):
         
     if message.content == "/tip 29coin 10000 <@700176826282147851>":
         # チャンネルへメッセージを送信
-        await message.channel.send("/tip JPYN 3.9 "f"{message.author.mention}　  <:winmen:701341863789068288> 🌈Rains☔ 🥩29coin Thanks!<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send("/tip JPYN 2.929 "f"{message.author.mention}　  <:winmen:701341863789068288> 🌈Rains☔ 🥩29coin Thanks!<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）
     
     if message.content == "/tip 29coin 100000 <@700176826282147851>":
         # チャンネルへメッセージを送信
-        await message.channel.send("/tip JPYN 39.29 "f"{message.author.mention}　  <:winmen:701341863789068288> 🌈Rains☔ 🍖🥩29coin Thanks!<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）  
+        await message.channel.send("/tip JPYN 29.2929 "f"{message.author.mention}　  <:winmen:701341863789068288> 🌈Rains☔ 🍖🥩29coin Thanks!<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）  
         
     if message.content == "goodnight":
         # チャンネルへメッセージを送信
