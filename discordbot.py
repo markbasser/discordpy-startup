@@ -26,21 +26,21 @@ async def on_message(message):
     if message.author.bot:  # ボットのメッセージをハネる
         return
 
-    if message.content == "goodmorning":
+    if message.content == "good morning":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん Good morning")  # f文字列（フォーマット済み文字列リテラル）
         
     if message.content == "/tip 29coin 10000 <@700176826282147851>":
         # チャンネルへメッセージを送信
-        await message.channel.send("/tip JPYN 2.929 "f"{message.author.mention}　  <:winmen:701341863789068288> 🌈Rains☔ 🥩29coin Thanks!<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send("/tip JPYN 0.2929 "f"{message.author.mention}　  <:winmen:701341863789068288> 🌈Rains☔ 🥩29coin Thanks!<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）
     
     if message.content == "/tip 29coin 100000 <@700176826282147851>":
         # チャンネルへメッセージを送信
-        await message.channel.send("/tip JPYN 29.2929 "f"{message.author.mention}　  <:winmen:701341863789068288> 🌈Rains☔ 🍖🥩29coin Thanks!<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）  
+        await message.channel.send("/tip JPYN 2.92929 "f"{message.author.mention}　  <:winmen:701341863789068288> 🌈Rains☔ 🍖🥩29coin Thanks!<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）  
         
-    if message.content == "goodnight":
+    if message.content == "thank u":
         # チャンネルへメッセージを送信
-        await message.channel.send(f"{message.author.mention}さん Good Night! Go to bed early♡")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send(f"<:ty01:721642675274776618> <:goodluck:724101036255608852>")  # f文字列（フォーマット済み文字列リテラル）
 
     if message.content == "おはよう":
         # チャンネルへメッセージを送信
@@ -62,17 +62,17 @@ async def on_message(message):
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん こんばんは😃🌃早く休みましょう🎵")  # f文字列（フォーマット済み文字列リテラル）
 
-    if message.content == "おはよー":
+    if message.content == "<:ex_now:736528729949601823> <:ex_now:736528729949601823> <:ex_now:736528729949601823>":
         # チャンネルへメッセージを送信
-        await message.channel.send(f"{message.author.mention}さん GoodMorning♡")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send(f"<:yubi_01:736096817028005909> <:maskeds:723895390658756638> <:yubi_01:736096817028005909> <:ex_now:736528729949601823>")  # f文字列（フォーマット済み文字列リテラル）
 
     if message.content == "おやすみなさい":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん Good Night! Have a good dream♡")  # f文字列（フォーマット済み文字列リテラル）
 
-    if message.content == "jp/jpyn":
+    if message.content == "<:yubi_01:736096817028005909> <:nerd_girl:733937654034595880> <:yubi_01:736096817028005909>":
         # チャンネルへメッセージを送信
-        await message.channel.send("/tip JPYN 10 "f"{message.author.mention}　 🔑<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send("<:ex_now:736528729949601823> <:yeah1:721319707482914877> <:ex_now:736528729949601823>")  # f文字列（フォーマット済み文字列リテラル）
        
     if message.content == "jp/ben":
         # チャンネルへメッセージを送信
